@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>首页哈哈</div>
+    <div><%=msg.name%></div>
+    <div><%-msg.html%></div>
+   <ul>
+       
+       <%for(var i=0;i<msg.list.length;i++){%>
+        <li><span><%=msg.list[i].aid%></span><span><%=msg.list[i].aname%></span></li>
+       <%}%>
+       
+   </ul>
+  
+
+</body>
+</html>
