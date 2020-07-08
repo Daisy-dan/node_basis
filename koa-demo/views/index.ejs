@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <%- include ('header.ejs'); -%>
+    aaa
+    <div>首页</div>
+    <%=data.a%>
+    <ul>
+        <% for(var i=0;i<data.list.length;i++){%>
+        <li><span><%=data.list[i].name%></span>---<span><%=data.list[i].age%></span></li>
+        <%}%>
+    </ul>
+    <%-data.b%>
+
+    <% if(data.c == true){%>
+        为true时显示
+
+    <%}else{%>
+        为false时显示
+
+    <%}%>
+    
+</body>
+</html>
